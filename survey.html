@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="survey.css">
+    <title>survey</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>나와 잘 맞는 회사는?</h1>
+            <p>가고 싶은 회사에 대한 호감도를 조사합니다. 아이고 의미 없다.</p>
+        </header>
+        <main class="main">
+            <form action="" method="get">
+                <fieldset class="fieldset">
+                    <p>다음 문자중에 왠지 마음에 드는 것을 하나 고르세요</p>
+                    <div>
+                        <input type="radio" id="naver"  name="1">
+                        <label for="naver">네</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" id="kakao"  name="1">
+                        <label for="kakao">카</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" id="line"  name="1">
+                        <label for="line">라</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" id="cou"  name="1">
+                        <label for="cou">쿠</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" id="jeju"  name="1">
+                        <label for="jeju">베</label>
+                    </div>
+                    
+                </fieldset>
+
+                <fieldset class="fieldset">
+                    <p>친구와 문자를 합니다. 다음 중 어떤 메신저를 이용하시겠습니까? 모두 골라주세요.</p>
+                    <div>
+                        <input type="checkbox" id="kaka">
+                        <label for="kaka">카카오톡</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="lin">
+                        <label for="lin">라인</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="insta">
+                        <label for="insta">인스타그램 디엠</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="nate">
+                        <label for="nate">네이트온</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="bu">
+                        <label for="bu">버디버디</label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="fieldset">
+                    <p>면접에서 자신의 포부를 한 문장으로 얘기한다면?</p>
+                    <input class="pb" type="text" placeholder="내 답변">
+                </fieldset>
+                <fieldset class="fieldset">
+                    <p>당신은 지금 한 기업의 최종면접을 앞두고 있습니다. 면접장에 들어가기 직전, 자기 자신에게 해주고 싶은말은?</p>
+                    <input class="mj" type="text" placeholder="내 답변">
+                </fieldset>
+
+                <fieldset class="fieldset">
+                    <p>다음 중 기술 면접때 듣고 싶은 질문이 아닌것은?</p>
+                    <select class="question" name="question" id="listen">
+                        <option value="">선택</option>
+                    </select>
+                </fieldset>
+                <fieldset class="fieldset">
+                    <p>취업을 희망하는 날짜는?</p>
+                    <label class="hope_label" for="hope">날짜</label>
+                    <div>
+                        <input class="hope_input" type="date" id="hope">
+                    </div>
+                    
+                </fieldset>
+                <fieldset class="fieldset">
+                    <p>업무를 시작 하기에 가장 적당한 시간을 고르세요</p>
+                    <label class="start_label" for="start">날짜</label>
+                    <div>
+                        <input class="start_input" type="time" id="start" min="12:00" max="18:00" required>
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+        <footer class="footer">
+            <button class="btn">제출</button>
+            <a class="erase" href="#">양식 지우기</a>
+        </footer>
+    </div>
+    
+</body>
+</html>
